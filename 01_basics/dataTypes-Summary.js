@@ -45,5 +45,27 @@ const myFunction = function(){
 }
 
 // how to check dataType of a value
-console.log(typeof id);
-console.log(typeof(carBrands));
+// console.log(typeof id);
+// console.log(typeof(carBrands));
+
+// +++++++++++++++++++++++++++++++++++++
+
+// stack(Primitive), heap(Non Primitive)
+
+let myUserName = "Dhruv";
+let anotherUserName = myUserName;
+anotherUserName = "D. K. Panchal"
+
+// console.log(myUserName);
+// console.log(anotherUserName);
+
+let userOne = {
+    name: "Dhruv",
+    age: 25
+};
+
+let userTwo = userOne;
+userTwo.name = "D. K. Panchal";
+
+console.log(userOne.name);
+console.log(userTwo.name);
