@@ -9,6 +9,7 @@
 const mySym = Symbol("Key1");
 
 //we can create object in variable using syntax as under
+//declaration using object literal
 const jsUser = {
     name: "Dhruv",
     "Full Name": "Dhruv K. Panchal",
