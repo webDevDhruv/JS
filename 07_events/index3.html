@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn ASYNC | webDevDhruv</title>
+</head>
+<body>
+    <h1>Dhruv</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+        const sayDate = (str) => {
+            console.log(str, Date.now());
+        }
+
+        //learn about buttons set interval and clear ubterval
+        const newInterval = setInterval(sayDate, 1000, 'hi');
+        const intervalId = setInterval(sayDate, 1000, 'hi');
+
+        document.querySelector('#start').addEventListener(('click'), () => {
+            console.log('started');
+            setInterval(newInterval);
+        });
+
+        document.querySelector('#stop').addEventListener(('click'), () => {
+            console.log('stopped');
+            clearInterval(intervalId);
+            clearInterval(newInterval);
+        });
+    </script>
+
+</body>
+</html>
